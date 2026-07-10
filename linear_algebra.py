@@ -32,3 +32,18 @@ C = [[ 1, 2, 3], [ 4, 5, 6]] and D =[[ 7, 8, 9, 10], [ 11, 12, 13, 14], [ 15, 16
 
 C= np.array([[ 1, 2, 3], [ 4, 5, 6]])
 D = np.array([[ 7, 8, 9, 10], [ 11, 12, 13, 14], [ 15, 16, 17, 18]])
+product_matrix = np.dot(C, D)
+print(f"Product of matrices C and D: {product_matrix}")
+
+"Problem #5"
+
+m = np.array([1, 1, 2])
+
+magnitude = np.linalg.norm(m)
+print(f"Magnitude of vector m: {magnitude}")
+
+
+"Problem #6"
+
+transpose_matrix = A.T
+print(f"Transpose of matrix A: {transpose_matrix}")
