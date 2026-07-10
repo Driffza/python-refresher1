@@ -1,10 +1,11 @@
 class BankAcc:
     def __init__(self, name, initial_balance=0):
         self.name = str(name)
+        self.number = str(input("Input number:"))
         self.balance = float(initial_balance)
         """ Gives name, number, and balance.
-
         """
+
 
     def transaction(self, amount):
         self.balance += amount
@@ -19,7 +20,7 @@ class BankAcc:
             self.balance -= amount
             return self.balance
         else:
-            print("Insufficient funds")
+            return (ValueError("Insufficient funds"))
     
-    def get_balance(self):
-        print(self.balance)
+    def get_number(self):
+        return self.number
